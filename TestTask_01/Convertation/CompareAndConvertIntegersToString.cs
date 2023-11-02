@@ -3,7 +3,7 @@
 /// <summary>
 /// Provides comparing and convertation of an int collection to the string collection according to rules
 /// </summary>
-internal class CompareAndConvertIntegersToString : IConvertArrayViaRule<string, int, Dictionary<int, string>>
+public class CompareAndConvertIntegersToString : IConvertArrayViaRule<string, int, Dictionary<int, string>>
 {
     /// <summary>
     /// Comparing and converting int collection to string collection according to rules:

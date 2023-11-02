@@ -3,7 +3,7 @@
 /// Provides comparing and convertation of an int collection to the string collection according to rules
 /// Additionally removing collection of values and inserting value
 /// </summary>
-internal class ConvertIntArrToStringArrAndReplaceMatches : CompareAndConvertIntegersToString
+public class ConvertIntArrToStringArrAndReplaceMatches : CompareAndConvertIntegersToString
 {
     private readonly string _replacement;                   //value to be added
     private readonly IEnumerable<string> _removing;         //collection of values to be deleted
