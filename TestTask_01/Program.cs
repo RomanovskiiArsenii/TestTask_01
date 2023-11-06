@@ -11,7 +11,7 @@ class TestTask
         //1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 60, 105, 420
 
         CompareAndConvertIntegersToString converter = new();
-        ConvertIntArrToStringArrAndReplaceMatches converterWithReplace = 
+        CompareAndConvertIntegersToStringAndReplaceMatches converterWithReplace = 
             new("good-boy", new List<string> () { "dog", "cat" });
         ReadIntegersFromConsole reader = new();
         WriteCollectionToConsole<int> writerInt = new();

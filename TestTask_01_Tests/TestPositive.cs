@@ -39,7 +39,7 @@ public class Tests
     [Test]
     public void ConvertArray_DogCatGoodBoyMuzzGuzz_ReturnsCorrectString()
     {
-        ConvertIntArrToStringArrAndReplaceMatches converterWithReplace = new("good-boy", new List<string> { "dog", "cat" });
+        CompareAndConvertIntegersToStringAndReplaceMatches converterWithReplace = new("good-boy", new List<string> { "dog", "cat" });
         var controlSequence = "1, 2, dog, muzz, cat, dog, guzz, muzz, dog, cat, 11, dog-muzz, 13, guzz, good-boy, good-boy-muzz, good-boy-guzz, good-boy-muzz-guzz";
         Dictionary<int, string> conversion = new()
         {

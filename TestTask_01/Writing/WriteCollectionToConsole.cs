@@ -11,7 +11,7 @@ internal class WriteCollectionToConsole<T> : IWriteCollection<T>
     /// </summary>
     public void WriteCollection(IEnumerable<T> collection)
     {
-        string output = string.Join(", ", collection);           //separate the collection and convert it to string
-        Console.WriteLine(output);                          //print it in console
+        string output = string.Join(", ", collection);          //separate the collection and convert it to string
+        Console.WriteLine(output);                              //print it in console
     }
 }

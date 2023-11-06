@@ -6,7 +6,7 @@
 public class CompareAndConvertIntegersToString : IConvertArrayViaRule<string, int, Dictionary<int, string>>
 {
     /// <summary>
-    /// Comparing and converting int collection to string collection according to rules:
+    /// Comparing and converting int collection to string collection according to rules
     /// if element divides by key without a reminder it converts to string and collect key's value
     /// otherwise element simply converts to string
     /// </summary>
