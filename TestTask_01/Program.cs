@@ -10,12 +10,13 @@ class TestTask
         //Tested sequence:
         //1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 60, 105, 420
 
-        CompareAndConvertIntegersToString converter = new();
-        CompareAndConvertIntegersToStringAndReplaceMatches converterWithReplace = 
-            new("good-boy", new List<string> () { "dog", "cat" });
-        ReadIntegersFromConsole reader = new();
-        WriteCollectionToConsole<int> writerInt = new();
-        WriteCollectionToConsole<string> writerStr = new();
+        IConvertArrayViaRule<string, int, Dictionary<int, string>> converter = new CompareAndConvertIntegersToString();
+        IConvertArrayViaRule<string, int, Dictionary<int, string>> converterWithReplace = new CompareAndConvertIntegersToStringAndReplaceMatches(
+                                                          "good-boy", new List<string> () { "dog", "cat" });
+        IReadToArray<int> reader = new ReadIntegersFromConsole();
+
+        IWriteCollection<int> writerInt = new WriteCollectionToConsole<int> ();
+        IWriteCollection<string> writerStr = new WriteCollectionToConsole<string> ();
 
         int[] range = reader.ReadToArray().ToArray();
         Console.WriteLine("Control sequence:");
